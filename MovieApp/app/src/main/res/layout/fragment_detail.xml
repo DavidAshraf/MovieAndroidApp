@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.david.movieapp.DetailActivityFragment"
+    tools:showIn="@layout/activity_detail"
+    android:id="@+id/fragment_detail"
+    android:orientation="vertical"
+
+    >
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="30sp"
+            android:textColor="#ccffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimary"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+             >
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/poster"
+                android:layout_gravity="top"
+                android:foregroundGravity="top"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:foregroundGravity="top"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/releasedate"
+                    android:textSize="27sp"
+                    android:foregroundGravity="top"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vote_averge"
+                    android:textSize="30sp"
+                    android:textStyle="italic"
+                    android:foregroundGravity="top"
+                    android:paddingTop="15dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/favorite_button"
+                    android:foregroundGravity="left"
+                    android:background="#00ffffff"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/favorite_button"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overview:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:paddingLeft="15dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:id="@+id/overview"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/secondary_text_light"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/actionBar"
+            android:layout_margin="5dp"
+            />
+
+
+
+
+</LinearLayout>
